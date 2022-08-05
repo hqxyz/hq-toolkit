@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>HQ Tools</title>
+</head>
+
+<body style="background: #eee;">
+
+    <div id="multisend"></div>
+
+    <script src="./hq-0.1.0.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            hq.init({
+                name: 'Sprout',
+                url: 'https://getsprout.co',
+                logoUrl: 'https://www.getsprout.co/wp-content/uploads/logo-sprout.svg'
+            })
+            hq.multisend({
+                elem: 'multisend',
+                purpose: 'Distribute funds',
+                recipients: [{
+                    address: '0xcEe6FeBe294D5591ed3ec94EBfcE35067cBA901F',
+                    token: 'USDT',
+                    amount: 0.01
+                }]
+            })
+        })
+    </script>
+
+    <!-- <div>
+        <form action="https://staging.hq.xyz/multisend" method="POST" style="border: 1px solid #ddd; background: #fff; padding: 1rem; border-radius: 1rem; display: inline-block; width: auto;">
+            <input type="hidden" name="recipients[][address]" value="0xcEe6FeBe294D5591ed3ec94EBfcE35067cBA901F" />
+            <input type="hidden" name="recipients[][amount]" value="0.01" />
+            <input type="hidden" name="recipients[][token]" value="USDC" />
+            <input type="hidden" name="recipients[][address]" value="0x14561995A8cbDD05371b0c94ea3E28ee8B51a9Ae" />
+            <input type="hidden" name="recipients[][amount]" value="0.01" />
+            <input type="hidden" name="recipients[][token]" value="USDC" />
+            <input type="hidden" name="recipients[][address]" value="0x14561995A8cbDD05371b0c94ea3E28ee8B51a9Ae" />
+            <input type="hidden" name="recipients[][amount]" value="0.01" />
+            <input type="hidden" name="recipients[][token]" value="USDC" />
+            <input type="hidden" name="recipients[][address]" value="0x8B0e15755a5517D33228cBa9dc75b68C5264FaEF" />
+            <input type="hidden" name="recipients[][amount]" value="0.01" />
+            <input type="hidden" name="recipients[][token]" value="USDC" />
+            <input type="hidden" name="recipients[][address]" value="0x2f58Acd918b9D3824E1741B7Bfa66D03Fb011E2e" />
+            <input type="hidden" name="recipients[][amount]" value="0.01" />
+            <input type="hidden" name="recipients[][token]" value="USDC" />
+            <input type="hidden" name="recipients[][address]" value="0xcEe6FeBe294D5591ed3ec94EBfcE35067cBA901F" />
+            <input type="hidden" name="recipients[][amount]" value="0.01" />
+            <input type="hidden" name="recipients[][token]" value="USDC" />
+            <input type="hidden" name="recipients[][address]" value="0x14561995A8cbDD05371b0c94ea3E28ee8B51a9Ae" />
+            <input type="hidden" name="recipients[][amount]" value="0.03" />
+            <input type="hidden" name="recipients[][token]" value="USDC" />
+            <input type="hidden" name="recipients[][address]" value="0x17b12F32fdA3140aa4a86AA7Ef7185378De984D5" />
+            <input type="hidden" name="recipients[][amount]" value="0.01" />
+            <input type="hidden" name="recipients[][token]" value="USDC" />
+            <input type="hidden" name="platformLogoUrl" value="https://www.getsprout.co/wp-content/uploads/logo-sprout.svg" />
+            <input type="hidden" name="platformUrl" value="https://www.getsprout.co/" />
+            <input type="hidden" name="platformName" value="Sprout" />
+            <input type="hidden" name="purpose" value="Distribute funds" />
+            <button type="submit" style="appearance: none; border: 0; color: #fff; background: rgb(232, 64, 109); font-size: 16px; font-family: Inter, sans-serif; cursor: pointer; font-weight: bold; padding: 1rem 2rem; border-radius: .5rem;">Send transaction with HQ Multisend</button>
+            <div style="font-size: 14px; font-family: Inter, sans-serif; color: #000; text-align: center; width: 100%;">Powered by <a href="https://hq.xyz" target="_blank" style="color:rgb(232, 64, 109);">Headquarters</a></div>
+        </form>
+    </div> -->
+</body>
+
+</html>
