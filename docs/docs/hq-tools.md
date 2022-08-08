@@ -16,7 +16,7 @@ Load the latest hq-tools SDK into your website. Find the latest version on our [
 <script src="./hq-0.1.0.min.js"></script>
 ```
 
-### What you'll need
+### Initialising the SDK
 
 In your JavaScript initialise the HQ SDK by calling the `init` function. The parameters `name`, `url` and `logoUrl` are required.
 
