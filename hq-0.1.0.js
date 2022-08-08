@@ -1,4 +1,4 @@
-(function (w, d, c) {
+(function (w, d, c, ce, ac, h) {
   let g
   const gr = ['logoUrl', 'url', 'name']
   w.hq = {
@@ -25,7 +25,8 @@
   hq.multisend = function ({
     recipients,
     purpose,
-    elem
+    elem,
+    label
   }) {
     if (!g) {
       c.error('HQ has not been initialised. Call hq.init() first')
@@ -44,15 +45,13 @@
       c.error('HQ multisend requires an array of recipients')
       return
     }
-    const ce = 'createElement'
-    const ac = 'appendChild'
     const f = d[ce]('form')
     f.method = 'post'
     f.src = 'https://app.hq.xyz/multisend'
     f.style = 'border: 1px solid #ddd; background: #fff; padding: 1rem; border-radius: 1rem; display: inline-block; width: auto;'
     Object.keys(g).forEach(function (k) {
       const i = d[ce]('input')
-      i.type = 'hidden'
+      i.type = h
       i.name = 'platform' + k.charAt(0).toUpperCase() + k.substring(1)
       i.value = g[k]
       f[ac](i)
@@ -60,20 +59,20 @@
     recipients.forEach(function (r) {
       Object.keys(r).forEach(function (k) {
         const i = d[ce]('input')
-        i.type = 'hidden'
+        i.type = h
         i.name = 'recipients[][' + k + ']'
         i.value = r[k]
         f[ac](i)
       })
     })
     const i = d[ce]('input')
-    i.type = 'hidden'
+    i.type = h
     i.name = 'purpose'
     i.value = purpose
     f[ac](i)
     const b = d[ce]('button')
     b.style = 'appearance: none; border: 0; color: #fff; background: rgb(232, 64, 109); font-size: 16px; font-family: Inter, sans-serif; cursor: pointer; font-weight: bold; padding: 1rem 2rem; border-radius: .5rem;'
-    b.innerText = 'Send transaction with HQ Multisend'
+    b.innerText = label || 'Send transaction with HQ Multisend'
     b.disabled = !recipients.length
     f[ac](b)
     const v = d[ce]('div')
@@ -93,4 +92,4 @@
     }
     e[ac](f)
   }
-})(window, document, console)
+})(window, document, console, 'createElement', 'appendChild', 'hidden')
