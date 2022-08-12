@@ -47,7 +47,7 @@
     }
     const f = d[ce]('form')
     f.method = 'post'
-    f.src = 'https://app.hq.xyz/multisend'
+    f.action = 'https://app.hq.xyz/multisend'
     f.style = 'border: 1px solid #ddd; background: #fff; padding: 1rem; border-radius: 1rem; display: inline-block; width: auto;'
     Object.keys(g).forEach(function (k) {
       const i = d[ce]('input')
