@@ -16,9 +16,9 @@
       return a
     }, {})
     if (o.staging) {
-      g.staging = true
+      t.staging = true
     }
-    if (Object.keys(t).length !== gr.length) {
+    if (Object.keys(t).length < gr.length) {
       c.error('HQ could not be initialised. ' + gr.join(', ') + ' are all required parameters.')
     } else {
       g = t
