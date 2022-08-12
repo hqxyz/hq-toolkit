@@ -15,6 +15,9 @@
       }
       return a
     }, {})
+    if (o.staging) {
+      g.staging = true
+    }
     if (Object.keys(t).length !== gr.length) {
       c.error('HQ could not be initialised. ' + gr.join(', ') + ' are all required parameters.')
     } else {
@@ -47,7 +50,7 @@
     }
     const f = d[ce]('form')
     f.method = 'post'
-    f.action = 'https://app.hq.xyz/multisend'
+    f.action = 'https://' + (g.staging ? 'staging' : 'app') + '.hq.xyz/multisend'
     f.style = 'border: 1px solid #ddd; background: #fff; padding: 1rem; border-radius: 1rem; display: inline-block; width: auto;'
     Object.keys(g).forEach(function (k) {
       const i = d[ce]('input')
