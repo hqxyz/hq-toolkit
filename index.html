@@ -13,7 +13,8 @@
             hq.init({
                 name: 'My Web Project',
                 url: 'https://mywebproject.com',
-                logoUrl: 'https://mywebproject.com/img/logo.svg'
+                logoUrl: 'https://mywebproject.com/img/logo.svg',
+                staging: true
             })
             hq.multisend({
                 elem: 'multisend',
@@ -21,7 +22,8 @@
                 recipients: [{
                     address: '0xcEe6FeBe294D5591ed3ec94EBfcE35067cBA901F',
                     token: 'USDC',
-                    amount: 0.01
+                    amount: 0.01,
+                    remark: 'Remarks'
                 }]
             })
         })

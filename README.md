@@ -45,7 +45,7 @@ hq.multisend({
         address: '0xcEe6FeBe294D5591ed3ec94EBfcE35067cBA901F',
         token: 'USDC',
         amount: 0.01,
-        name: 'Recipient name'
+        remarks: 'Remarks'
     }]
 })
 ```
