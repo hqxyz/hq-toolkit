@@ -13,7 +13,7 @@ The HQ Tools let you integrate easily with the services offered by Headquarters.
 Load the latest hq-tools SDK into your website. Find the latest version on our [HQ Tools Github page](https://github.com/flowstation/hq-tools).
 
 ```html
-<script src="./hq-0.1.0.min.js"></script>
+<script src="./hq-0.1.1.min.js"></script>
 ```
 
 ### Initialising the SDK

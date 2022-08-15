@@ -2,7 +2,7 @@
   let g
   const gr = ['logoUrl', 'url', 'name']
   w.hq = {
-    v: '0.1.0'
+    v: '0.1.1'
   }
   hq.init = function (o) {
     if (!o) {
@@ -84,7 +84,7 @@
     const a = d[ce]('a')
     a.src = 'https://www.hq.xyz'
     a.target = '_blank'
-    a.style = 'color: rgb(232, 64, 109);'
+    a.style = 'color: rgb(232, 64, 109); display: inline-block; margin-top: .2em;'
     a.innerText = 'Headquarters'
     v[ac](a)
     f[ac](v)
