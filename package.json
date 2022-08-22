@@ -1,0 +1,36 @@
+{
+  "name": "hq-tools",
+  "version": "0.1.1",
+  "main": "hq-0.1.1-react.min.js",
+  "module": "hq-0.1.1-react.min.js",
+  "sideEffects": false,
+  "license": "MIT",
+  "description": "React component to embed the HQ Tools Multisend feature",
+  "files": [
+    "hq-0.1.1-react.min.js"
+  ],
+  "author": "Thomas Gorissen <mail@serrynaimo.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flowstation/hq-tools.git"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "keywords": [
+    "multisend",
+    "disperse",
+    "crypto",
+    "transaction",
+    "transfer",
+    "react",
+    "react-component",
+    "button",
+    "gnosis",
+    "hq",
+    "headquarters"
+  ]
+}

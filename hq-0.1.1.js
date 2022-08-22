@@ -1,4 +1,8 @@
 (function (w, d, c, ce, ac, h) {
+  if (!w) {
+    return
+  }
+  const d = w.document
   let g
   const gr = ['logoUrl', 'url', 'name']
   w.hq = {
@@ -95,4 +99,4 @@
     }
     e[ac](f)
   }
-})(window, document, console, 'createElement', 'appendChild', 'hidden')
+})(typeof window !== 'undefined' ? window : null, console, 'createElement', 'appendChild', 'hidden')
