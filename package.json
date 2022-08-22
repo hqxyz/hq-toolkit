@@ -1,13 +1,14 @@
 {
   "name": "hq-toolkit",
-  "version": "0.1.1",
-  "main": "hq-0.1.1-react.min.js",
-  "module": "hq-0.1.1-react.min.js",
+  "version": "0.1.2",
+  "main": "hq-0.1.2-react.min.js",
+  "module": "hq-0.1.2-react.min.js",
   "sideEffects": false,
   "license": "MIT",
   "description": "React component to embed the HQ Toolkit Multisend feature",
   "files": [
-    "hq-0.1.1-react.min.js"
+    "hq-0.1.2-react.min.js",
+    "hq-0.1.2.min.js"
   ],
   "author": "Thomas Gorissen <mail@serrynaimo.com>",
   "repository": {

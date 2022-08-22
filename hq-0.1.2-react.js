@@ -1,4 +1,4 @@
-import './hq-0.1.1.min.js'
+import './hq-0.1.2.min.js'
 import React, { useEffect } from 'react'
 export function Multisend ({ config, recipients, label, purpose }) {
   const elem = 'hq-toolkit-multisend'

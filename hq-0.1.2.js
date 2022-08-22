@@ -6,7 +6,7 @@
   let g
   const gr = ['logoUrl', 'url', 'name']
   w.hq = {
-    v: '0.1.1'
+    v: '0.1.2'
   }
   hq.init = function (o) {
     if (!o) {

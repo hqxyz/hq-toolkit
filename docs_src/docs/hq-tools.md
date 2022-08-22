@@ -13,7 +13,7 @@ The HQ Toolkit let you integrate easily with the services offered by Headquarter
 Load the latest hq-toolkit SDK into your website. Find the latest version on our [HQ Toolkit Github page](https://github.com/flowstation/hq-toolkit).
 
 ```html
-<script src="./hq-0.1.1.min.js"></script>
+<script src="./hq-0.1.2.min.js"></script>
 ```
 
 ### Initialising the SDK
