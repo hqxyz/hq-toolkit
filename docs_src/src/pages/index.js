@@ -16,8 +16,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/hq-tools">
-            HQ Tools JavaScript SDK
+            to="/docs/hq-toolkit">
+            HQ Toolkit JavaScript SDK
           </Link>
         </div>
       </div>

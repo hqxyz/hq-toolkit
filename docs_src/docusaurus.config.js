@@ -17,7 +17,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'flowstation', // Usually your GitHub org/user name.
-  projectName: 'hq-tools', // Usually your repo name.
+  projectName: 'hq-toolkit', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -65,12 +65,12 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'hq-tools',
+            docId: 'hq-toolkit',
             position: 'left',
-            label: 'HQ Tools',
+            label: 'HQ Toolkit',
           },
           {
-            href: 'https://github.com/flowstation/hq-tools',
+            href: 'https://github.com/flowstation/hq-toolkit',
             label: 'GitHub',
             position: 'right',
           },
@@ -83,8 +83,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'HQ Tools',
-                to: '/docs/hq-tools',
+                label: 'HQ Toolkit',
+                to: '/docs/hq-toolkit',
               },
             ],
           },
@@ -106,7 +106,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/flowstation/hq-tools',
+                href: 'https://github.com/flowstation/hq-toolkit',
               }
             ]
           }

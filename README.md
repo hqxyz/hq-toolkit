@@ -1,12 +1,12 @@
-# HQ Tools JavaScript SDK
+# HQ Toolkit JavaScript SDK
 
-The HQ Tools let you integrate easily with the services offered by Headquarters.
+The HQ Toolkit let you integrate easily with the services offered by Headquarters.
 
 ## Getting Started (VanillaJS)
 
 ### Load the SDK 
 
-Load the latest hq-tools SDK into your website. Find the latest version on our [HQ Tools Github page](https://github.com/flowstation/hq-tools).
+Load the latest hq-toolkit SDK into your website. Find the latest version on our [HQ Toolkit Github page](https://github.com/flowstation/hq-toolkit).
 
 ```html
 <script src="./hq-0.1.1.min.js"></script>
@@ -14,7 +14,7 @@ Load the latest hq-tools SDK into your website. Find the latest version on our [
 
 ### Initialising the SDK
 
-In your JavaScript initialise the HQ Tools SDK by calling the `init` function. The parameters `name`, `url` and `logoUrl` are required.
+In your JavaScript initialise the HQ Toolkit SDK by calling the `init` function. The parameters `name`, `url` and `logoUrl` are required.
 
 ```js
 window.addEventListener('DOMContentLoaded', function () {
@@ -28,9 +28,9 @@ window.addEventListener('DOMContentLoaded', function () {
 
 ## HQ Multisend
 
-[HQ Multisend](https://app.hq.xyz/multisend) allows you to quickle distribute funds to a list of multiple recipients. Using the HQ Tools JavaScript SDKs `multisend` function you can embed a button into your website that provides a link to prefill the HQ Multisend form with a list of recipient wallets and corresponding token amounts.
+[HQ Multisend](https://app.hq.xyz/multisend) allows you to quickle distribute funds to a list of multiple recipients. Using the HQ Toolkit JavaScript SDKs `multisend` function you can embed a button into your website that provides a link to prefill the HQ Multisend form with a list of recipient wallets and corresponding token amounts.
 
-![HQ Multisend Embed Button](https://github.com/flowstation/hq-tools/blob/main/docs/img/hq-multisend-button.png?raw=true)
+![HQ Multisend Embed Button](https://github.com/flowstation/hq-toolkit/blob/main/docs/img/hq-multisend-button.png?raw=true)
 
 To do so, the `multisend` function expects a DOM element id as `elem`, this is the element the button will be rendered in, a `purpose` describing the transaction and a `recipients` array containing objects with the details of each recipient. An optional `label` text can be passed to change the button label.
 
@@ -52,7 +52,7 @@ hq.multisend({
 
 ## Getting Started (ReactJS)
 
-Import the latest version of the HQ Multisend for React with the command `npm install hq-tools`.
+Import the latest version of the HQ Multisend for React with the command `npm install hq-toolkit`.
 
 
 ### Using the Multisend component
@@ -60,7 +60,7 @@ Import the latest version of the HQ Multisend for React with the command `npm in
 Import the componenent and make a variable available for use in your React component that holds the following configuration:
 
 ```js
-import { Multisend } from 'hq-tools'
+import { Multisend } from 'hq-toolkit'
 
 const hq_config = {
     name: 'My Web Project',
