@@ -6,7 +6,7 @@ sidebar_position: 1
 
 The HQ Toolkit let you integrate easily with the services offered by Headquarters.
 
-## Getting Started
+## Getting Started (VanillaJS)
 
 ### Load the SDK
 
@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', function () {
 })
 ```
 
-## HQ Multisend
+### Using HQ Multisend
 
 [HQ Multisend](https://app.hq.xyz/multisend) allows you to quickle distribute funds to a list of multiple recipients. Using the HQ Toolkit JavaScript SDKs `multisend` function you can embed a button into your website that provides a link to prefill the HQ Multisend form with a list of recipient wallets and corresponding token amounts.
 
@@ -59,7 +59,7 @@ hq.multisend({
 Import the latest version of the HQ Multisend for React with the command `npm install hq-toolkit`.
 
 
-### Using the Multisend component
+### The HQ Multisend component
 
 Import the componenent and make a variable available for use in your React component that holds the following configuration:
 
