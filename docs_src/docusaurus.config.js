@@ -59,8 +59,8 @@ const config = {
       navbar: {
         title: 'for Developers',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/headquarters.png',
+          alt: 'HQ Logo',
+          src: 'img/headquarters.svg',
         },
         items: [
           {
