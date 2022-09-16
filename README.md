@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 [HQ Multisend](https://app.hq.xyz/multisend) allows you to quickle distribute funds to a list of multiple recipients. Using the HQ Toolkit JavaScript SDKs `multisend` function you can embed a button into your website that provides a link to prefill the HQ Multisend form with a list of recipient wallets and corresponding token amounts.
 
-![HQ Multisend Embed Button](/img/hq-multisend-button.png)
+![HQ Multisend Embed Button](https://developers.hq.xyz/assets/images/hq-multisend-button-5bed7498ef96642a217f7939cdc869e6.png)
 
 To do so, the `multisend` function expects a DOM element id as `elem`, this is the element the button will be rendered in, a `purpose` describing the transaction and a `recipients` array containing objects with the details of each recipient. An optional `label` text can be passed to change the button label.
 
