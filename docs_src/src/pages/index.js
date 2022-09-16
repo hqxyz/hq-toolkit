@@ -35,7 +35,7 @@ export default function Home() {
       <main>
         
       </main>
-      <script src="./hq-0.1.2.min.js"></script>
+      <script src="./hq-0.1.3.min.js"></script>
     </Layout>
   );
 }
